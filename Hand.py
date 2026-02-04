@@ -1,0 +1,1 @@
+list=["legsss","leg","body","armss","arm","head","hanger"]

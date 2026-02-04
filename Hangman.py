@@ -1,0 +1,1 @@
+word = ["Apple","Ball","Cat"]
