@@ -7,4 +7,4 @@ person = float(input("How many people to split the bill? "))
 After_tip = (Tip*Total_bill)/100 +Total_bill
 Split = round(After_tip/person,2)
 print(f"Each person should pay: ${Split}")
-print('"hello orld"')
+
