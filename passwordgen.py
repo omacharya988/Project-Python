@@ -6,7 +6,7 @@ symbols =['!','#','$','%','&','(',')','*','+']
 print("Welcom to password generator")
 letter = int(input("How many letter you like in password\n"))
 symbol = int(input("How many symbol you want in password\n"))
-number = int(input("How many symbol you want in password\n"))
+number = int(input("How many number you want in password\n"))
 #Easy
 password = []
 for i in range (0,letter):
@@ -15,16 +15,16 @@ for i in range (0,symbol):
     password += random.choice(symbols)
 for i in range (0,number):
     password += random.choice(numbers)
-a = password
-print(password)
-random.shuffle(a)
-print(a)
+
+
+random.shuffle(password)
+
 
 '''It will join the letter contain in the list'''
 print("".join(password))
 
 
-#Hard
+#Hard = 2nd way to do it with append
 passwords = []
 for i in range (0,letter):
     passwords.append(random.choice(letters))
@@ -34,10 +34,9 @@ for i in range (0,number):
     passwords.append(random.choice(numbers))
 #print(passwords)
 random.shuffle(passwords)
-print(passwords)
+
 passwordgen =""
 for i in passwords:
     passwordgen += i
 
 print(f"Your password is: {passwordgen}")
-
